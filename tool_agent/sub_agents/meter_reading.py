@@ -113,7 +113,7 @@ def create_meter_data(search_query: str) -> str:
         if "data" in response_data and "id" in response_data["data"]:
             meter_ids_list.append(response_data["data"]["id"])
             # You can print or log the list to see it grow:
-            # print(f"Current meter IDs: {meter_ids_list}")
+            print(f"Current meter IDs: {meter_ids_list}")
         
         return response_data
     except requests.exceptions.HTTPError as http_err:

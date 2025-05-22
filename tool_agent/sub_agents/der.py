@@ -100,6 +100,7 @@ def create_der(search_query: str) -> str:
                 "er_id": latest_er_id
             })
             # print(f"Current DERs: {created_ders_details}") # For debugging
+            print(f"DER created for {selected_appliance_name} with ID: {der_id}")
         else:
             return f"Successfully called API, but could not extract DER ID from response: {response_data}"
             

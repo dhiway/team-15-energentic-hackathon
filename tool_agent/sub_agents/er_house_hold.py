@@ -65,7 +65,7 @@ def create_er_house_hold(search_query: str) -> str:
         if "data" in response_data and "id" in response_data["data"]:
             er_household_ids_list.append(response_data["data"]["id"])
             # You can print or log the list to see it grow:
-            # print(f"Current ER Household IDs: {er_household_ids_list}")
+            print(f"Current ER Household IDs: {er_household_ids_list}")
         
         return response_data # Return the full response data
 
